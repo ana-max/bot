@@ -109,7 +109,7 @@ keyboard_12.add(button_1)
 def send_text(message):
     try:
         chatid = message.chat.id
-        if message.text == 'ДА ✅' or message.text == '!НЕТ 🔔':
+        if message.text == 'ДА ✅' or message.text == '! НЕТ 🔔':
             bot.send_message(chatid, question_1, reply_markup=keyboard_1)
 
         elif message.text.lower() == 'математический анализ 📕':
