@@ -190,15 +190,15 @@ def send_text(message):
         elif message.text == '1 год':
             bot.send_message(chatid, 'больше')
             bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6JBgM54L3XHeP2HMk6AIHcJY_zlJbwACTAIAAsoDBgsSVmODbCJUUh4E')
-            bot.send_message(chatid, question_10, reply_markup=keyboard_11)
+            bot.send_message(chatid, question_10, reply_markup=keyboard_10)
         elif message.text == '2 года':
             bot.send_message(chatid, 'больше')
             bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6JBgM54L3XHeP2HMk6AIHcJY_zlJbwACTAIAAsoDBgsSVmODbCJUUh4E')
-            bot.send_message(chatid, question_10, reply_markup=keyboard_11)
+            bot.send_message(chatid, question_10, reply_markup=keyboard_10)
         elif message.text == '3 года':
             bot.send_message(chatid, 'красавчик')
             bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6I5gM53GlFAwsMhaWlVhSd9IPzMOYQACSwEAAjDUnREBhYZ3NsTI6R4E')
-            bot.send_message(chatid, question_10, reply_markup=keyboard_11)
+            bot.send_message(chatid, question_10, reply_markup=keyboard_10)
 
         elif message.text == 'Доктор Кто':
             bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6OxgM9HK2xG8PJySjGTZvE4XE90uoAACMwIAArrAlQWc3UwCquHIDh4E')
