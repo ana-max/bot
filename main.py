@@ -98,113 +98,110 @@ keyboard_12 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
 
 @bot.message_handler(content_types=['text'])
 def send_text(message):
-    try:
-        chatid = message.chat.id
-        if message.text.lower() == 'да' or message.text.lower() == 'дааа':
-            bot.send_message(chatid, question_1,reply_markup=keyboard_1)
+    chatid = message.chat.id
+    if message.text.lower() == 'да' or message.text.lower() == 'дааа':
+        bot.send_message(chatid, question_1, reply_markup=keyboard_1)
 
-        elif message.text.lower() == 'математический анализ 📕':
-            bot.send_message(chatid, 'почти)')
-            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6FVgM2ZfQbTdqnsGq3snPXSyHWdCRAACDQIAAnELQgUWFw2p54h4ER4E')
-            bot.send_message(chatid, question_2, reply_markup=keyboard_2)
-        elif message.text.lower() == 'апелляционные системы 📗':
-            bot.send_message(chatid, 'У нас не было такого предмета, ыыы)))))')
-            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6FJgM2ZcS8DhK3tL_4u72ICrWqarPQACYwADcQtCBQytAij6PWzGHgQ')
-            bot.send_message(chatid, question_2, reply_markup=keyboard_2)
-        elif message.text.lower() == 'алгебра и геометрия 📘':
-            bot.send_message(chatid, 'Красавчик')
-            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6FNgM2ZdWNh0MoHq-DSDk7zjcUY7GAACaQADcQtCBd_HSOqRK3qqHgQ')
-            bot.send_message(chatid, question_2, reply_markup=keyboard_2)
+    elif message.text.lower() == 'математический анализ 📕':
+        bot.send_message(chatid, 'почти)')
+        bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6FVgM2ZfQbTdqnsGq3snPXSyHWdCRAACDQIAAnELQgUWFw2p54h4ER4E')
+        bot.send_message(chatid, question_2, reply_markup=keyboard_2)
+    elif message.text.lower() == 'апелляционные системы 📗':
+        bot.send_message(chatid, 'У нас не было такого предмета, ыыы)))))')
+        bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6FJgM2ZcS8DhK3tL_4u72ICrWqarPQACYwADcQtCBQytAij6PWzGHgQ')
+        bot.send_message(chatid, question_2, reply_markup=keyboard_2)
+    elif message.text.lower() == 'алгебра и геометрия 📘':
+        bot.send_message(chatid, 'Красавчик')
+        bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6FNgM2ZdWNh0MoHq-DSDk7zjcUY7GAACaQADcQtCBd_HSOqRK3qqHgQ')
+        bot.send_message(chatid, question_2, reply_markup=keyboard_2)
 
-        elif message.text == 'Александр Гейн':
-            bot.send_message(chatid, 'Ты вообще на пары ходил?))')
-            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6HlgM43jPrEEduALbKgqvRZCKzwSBAACfQAD3wN7BZ_dcWmdqzYaHgQ')
-            bot.send_message(chatid, question_3, reply_markup=keyboard_3)
-        elif message.text == 'Магаз Асанов':
-            bot.send_message(chatid, 'Тест на посещаемость пройден')
-            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6HlgM43jPrEEduALbKgqvRZCKzwSBAACfQAD3wN7BZ_dcWmdqzYaHgQ')
-            bot.send_message(chatid, question_3, reply_markup=keyboard_3)
-        elif message.text == 'Денис Березин':
-            bot.send_message(chatid, 'Ты вообще на пары ходил?))')
-            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6HlgM43jPrEEduALbKgqvRZCKzwSBAACfQAD3wN7BZ_dcWmdqzYaHgQ')
-            bot.send_message(chatid, question_3, reply_markup=keyboard_3)
+    elif message.text == 'Александр Гейн':
+        bot.send_message(chatid, 'Ты вообще на пары ходил?))')
+        bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6HlgM43jPrEEduALbKgqvRZCKzwSBAACfQAD3wN7BZ_dcWmdqzYaHgQ')
+        bot.send_message(chatid, question_3, reply_markup=keyboard_3)
+    elif message.text == 'Магаз Асанов':
+        bot.send_message(chatid, 'Тест на посещаемость пройден')
+        bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6HlgM43jPrEEduALbKgqvRZCKzwSBAACfQAD3wN7BZ_dcWmdqzYaHgQ')
+        bot.send_message(chatid, question_3, reply_markup=keyboard_3)
+    elif message.text == 'Денис Березин':
+        bot.send_message(chatid, 'Ты вообще на пары ходил?))')
+        bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6HlgM43jPrEEduALbKgqvRZCKzwSBAACfQAD3wN7BZ_dcWmdqzYaHgQ')
+        bot.send_message(chatid, question_3, reply_markup=keyboard_3)
 
-        elif message.text == 'Меньше 10':
-            bot.send_message(chatid, 'Нам, на самом деле, лень считать)))')
-            bot.send_photo(chatid, open('images/CeQr_PCiVHQ.png', 'rb'))
-            bot.send_message(chatid, question_4, reply_markup=keyboard_4)
-        elif message.text == 'От 10 до 20':
-            bot.send_message(chatid, 'Нам, на самом деле, лень считать)))')
-            bot.send_photo(chatid, open('images/CeQr_PCiVHQ.png', 'rb'))
-            bot.send_message(chatid, question_4, reply_markup=keyboard_4)
-        elif message.text == 'Больше 20':
-            bot.send_message(chatid, 'Нам, на самом деле, лень считать)))')
-            bot.send_photo(chatid, open('images/CeQr_PCiVHQ.png', 'rb'))
-            bot.send_message(chatid, question_4, reply_markup=keyboard_4)
+    elif message.text == 'Меньше 10':
+        bot.send_message(chatid, 'Нам, на самом деле, лень считать)))')
+        bot.send_photo(chatid, open('images/CeQr_PCiVHQ.png', 'rb'))
+        bot.send_message(chatid, question_4, reply_markup=keyboard_4)
+    elif message.text == 'От 10 до 20':
+        bot.send_message(chatid, 'Нам, на самом деле, лень считать)))')
+        bot.send_photo(chatid, open('images/CeQr_PCiVHQ.png', 'rb'))
+        bot.send_message(chatid, question_4, reply_markup=keyboard_4)
+    elif message.text == 'Больше 20':
+        bot.send_message(chatid, 'Нам, на самом деле, лень считать)))')
+        bot.send_photo(chatid, open('images/CeQr_PCiVHQ.png', 'rb'))
+        bot.send_message(chatid, question_4, reply_markup=keyboard_4)
 
-        elif message.text == 'Петрова':
-            bot.send_message(chatid, question_5, reply_markup=keyboard_5)
+    elif message.text == 'Петрова':
+        bot.send_message(chatid, question_5, reply_markup=keyboard_5)
 
-        elif message.text == 'Редаль Актанов':
-            bot.send_photo(chatid, open('images/cover_desktop_zip-min.png', 'rb'))
-            bot.send_message(chatid, question_6, reply_markup=keyboard_6)
-        elif message.text == 'Актан Редалев':
-            bot.send_photo(chatid, open('images/cover_desktop_zip-min.png', 'rb'))
-            bot.send_message(chatid, question_6, reply_markup=keyboard_6)
+    elif message.text == 'Редаль Актанов':
+        bot.send_photo(chatid, open('images/cover_desktop_zip-min.png', 'rb'))
+        bot.send_message(chatid, question_6, reply_markup=keyboard_6)
+    elif message.text == 'Актан Редалев':
+        bot.send_photo(chatid, open('images/cover_desktop_zip-min.png', 'rb'))
+        bot.send_message(chatid, question_6, reply_markup=keyboard_6)
 
-        elif message.text == '100':
-            bot.send_sticker(chatid, 'CAACAgQAAxkBAAEB6FxgM3Cc_eNkNWhwqyo-xYDc8prL9wACFQADUYzPAZqYy_kcac6dHgQ')
-            bot.send_message(chatid, question_7, reply_markup=keyboard_7)
-        elif message.text == '300':
-            bot.send_sticker(chatid, 'CAACAgQAAxkBAAEB6FpgM3CX9jM3U8VeIVHT6643or2ikQACEwADUYzPAfLpWEUJdP3CHgQ')
-            bot.send_message(chatid, question_7, reply_markup=keyboard_7)
-        elif message.text == 'ты че пес':
-            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6GJgM3H7MCk8-Feon45PfHTRLdB7DQACFVMAAulVBRgAAfRdEhFSbTUeBA')
-            bot.send_message(chatid, question_7, reply_markup=keyboard_7)
+    elif message.text == '100':
+        bot.send_sticker(chatid, 'CAACAgQAAxkBAAEB6FxgM3Cc_eNkNWhwqyo-xYDc8prL9wACFQADUYzPAZqYy_kcac6dHgQ')
+        bot.send_message(chatid, question_7, reply_markup=keyboard_7)
+    elif message.text == '300':
+        bot.send_sticker(chatid, 'CAACAgQAAxkBAAEB6FpgM3CX9jM3U8VeIVHT6643or2ikQACEwADUYzPAfLpWEUJdP3CHgQ')
+        bot.send_message(chatid, question_7, reply_markup=keyboard_7)
+    elif message.text == 'ты че пес':
+        bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6GJgM3H7MCk8-Feon45PfHTRLdB7DQACFVMAAulVBRgAAfRdEhFSbTUeBA')
+        bot.send_message(chatid, question_7, reply_markup=keyboard_7)
 
-        elif message.text == 'Игорь Чернышев':
-            bot.send_photo(chatid, open('images/cover_desktop_zip-min.png', 'rb'))
-            bot.send_message(chatid, question_8, reply_markup=keyboard_8)
-        elif message.text == 'Черныш Игорев':
-            bot.send_photo(chatid, open('images/cover_desktop_zip-min.png', 'rb'))
-            bot.send_message(chatid, question_8, reply_markup=keyboard_8)
+    elif message.text == 'Игорь Чернышев':
+        bot.send_photo(chatid, open('images/cover_desktop_zip-min.png', 'rb'))
+        bot.send_message(chatid, question_8, reply_markup=keyboard_8)
+    elif message.text == 'Черныш Игорев':
+        bot.send_photo(chatid, open('images/cover_desktop_zip-min.png', 'rb'))
+        bot.send_message(chatid, question_8, reply_markup=keyboard_8)
 
-        elif message.text == 'простите, у меня очень большая рука, не могу набирать':
-            bot.send_message(chatid, 'панимаю')
-            bot.send_message(chatid, question_9, reply_markup=keyboard_9)
-        elif message.text == 'простите, ничего не вижу,тут чья-то рука':
-            bot.send_message(chatid, 'панимаю')
-            bot.send_message(chatid, question_9, reply_markup=keyboard_9)
+    elif message.text == 'простите, у меня очень большая рука, не могу набирать':
+        bot.send_message(chatid, 'панимаю')
+        bot.send_message(chatid, question_9, reply_markup=keyboard_9)
+    elif message.text == 'простите, ничего не вижу,тут чья-то рука':
+        bot.send_message(chatid, 'панимаю')
+        bot.send_message(chatid, question_9, reply_markup=keyboard_9)
 
-        elif message.text == '1 год':
-            bot.send_message(chatid, 'больше')
-            bot.send_message(chatid, question_10, reply_markup=keyboard_10)
-        elif message.text == '2 года':
-            bot.send_message(chatid, 'больше')
-            bot.send_message(chatid, question_10, reply_markup=keyboard_10)
-        elif message.text == '3 года':
-            bot.send_message(chatid, 'красавчик')
-            bot.send_message(chatid, question_10, reply_markup=keyboard_10)
+    elif message.text == '1 год':
+        bot.send_message(chatid, 'больше')
+        bot.send_message(chatid, question_10, reply_markup=keyboard_10)
+    elif message.text == '2 года':
+        bot.send_message(chatid, 'больше')
+        bot.send_message(chatid, question_10, reply_markup=keyboard_10)
+    elif message.text == '3 года':
+        bot.send_message(chatid, 'красавчик')
+        bot.send_message(chatid, question_10, reply_markup=keyboard_10)
 
-        elif message.text == 'Доктор Кто':
-            bot.send_message(chatid, 'вроде бы верно))))')
-            bot.send_message(chatid, question_11, reply_markup=keyboard_11)
-        elif message.text == 'Доктор Хаус':
-            bot.send_message(chatid, 'возможно')
-            bot.send_message(chatid, question_11, reply_markup=keyboard_11)
-        elif message.text == 'Доктор Как':
-            bot.send_message(chatid, 'хехе, такого нет, хехе')
-            bot.send_message(chatid, question_11, reply_markup=keyboard_11)
+    elif message.text == 'Доктор Кто':
+        bot.send_message(chatid, 'вроде бы верно))))')
+        bot.send_message(chatid, question_11, reply_markup=keyboard_11)
+    elif message.text == 'Доктор Хаус':
+        bot.send_message(chatid, 'возможно')
+        bot.send_message(chatid, question_11, reply_markup=keyboard_11)
+    elif message.text == 'Доктор Как':
+        bot.send_message(chatid, 'хехе, такого нет, хехе')
+        bot.send_message(chatid, question_11, reply_markup=keyboard_11)
 
-        elif message.text == 'Я':
-            bot.send_message(chatid, 'Всё так и есть))')
-            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6H1gM5GCtm1lqtSeeohMkSjJyh5OpgACKQIAAlrjiheVZYpBjeH4vx4E')
-            bot.send_message(chatid, question_6, reply_markup=keyboard_12)
+    elif message.text == 'Я':
+        bot.send_message(chatid, 'Всё так и есть))')
+        bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6H1gM5GCtm1lqtSeeohMkSjJyh5OpgACKQIAAlrjiheVZYpBjeH4vx4E')
+        bot.send_message(chatid, question_6, reply_markup=keyboard_12)
 
-        else:
-            bot.send_message(message.chat.id, "да-да, взломал, поломал, тыкни на предложенные варианты :)")
-    except:
-        pass
+    else:
+        bot.send_message(message.chat.id, "да-да, взломал, поломал, тыкни на предложенные варианты :)")
 
 
 bot.polling(none_stop=True)
