@@ -7,7 +7,7 @@ bot = telebot.TeleBot(TOKEN)
 question_1 = 'Пара по какому предмету была нашей самой первой парой на матмехе?📝'
 question_2 = 'Кому принадлежит фраза:《К концу четвёртого курса студент матмеха становится пришибленнее》?'
 question_3 = 'Сколько математических предметов было у нас за всё время?'
-question_4 = 'Кто самый красивый мальчик на матмехе?'
+question_4 = 'Кто самая сладкая булочка на матмехе?'
 question_5 = 'Кто больше всех подходит Игорю?'
 question_6 = 'Сколько вопросов задал Александр Шукстов за весь период обучения?'
 
@@ -49,13 +49,14 @@ keyboard_3.add(button_1, button_2, button_3)
 
 keyboard_4 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
 button_1 = types.KeyboardButton(text="Я")
-button_2 = types.KeyboardButton(text="Me")
-keyboard_4.add(button_1, button_2)
+keyboard_4.add(button_1)
+
 
 keyboard_5 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
 button_1 = types.KeyboardButton(text="Редаль Актанов")
 button_2 = types.KeyboardButton(text="Актан Редалев")
 keyboard_5.add(button_1, button_2)
+
 
 keyboard_6 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
 button_1 = types.KeyboardButton(text="100")
