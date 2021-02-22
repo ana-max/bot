@@ -1,7 +1,7 @@
 import telebot
 from telebot import types
 
-TOKEN = '1639424406:AAHd229H9PNgE8CPiLqH4tYOIIoWYvAvcAA'
+TOKEN = '1507507894:AAGPVmkD9begucTC856mvXyYJOvavTFwdyA'
 bot = telebot.TeleBot(TOKEN)
 
 question_1 = 'Пара по какому предмету была нашей самой первой парой на матмехе?📝'
@@ -15,6 +15,8 @@ question_8 = 'Какого размера рука у Алексея Приба�
 question_9 = 'Сколько лет Михаил Юдин является нашим старостой?'
 question_10 = 'Любимый сериал Паши Солдатова?'
 question_11 = 'Кто самая сладкая булочка на матмехе?'
+
+answer = 'Поздравляю, ты выиграл приз! Приходи в пятницу на пары и получай приз!'
 
 
 hi_keyboard = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
@@ -99,7 +101,7 @@ keyboard_12 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
 @bot.message_handler(content_types=['text'])
 def send_text(message):
     chatid = message.chat.id
-    if message.text.lower() == 'да' or message.text.lower() == 'дааа':
+    if message.text == 'ДА ✅' or message.text == '!НЕТ 🔔':
         bot.send_message(chatid, question_1, reply_markup=keyboard_1)
 
     elif message.text.lower() == 'математический анализ 📕':
@@ -170,20 +172,25 @@ def send_text(message):
 
     elif message.text == 'простите, у меня очень большая рука, не могу набирать':
         bot.send_message(chatid, 'панимаю')
+        bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6IxgM52XoSYnUvF9AAE4Tq-wzKQymVQAAopeAALpVQUY0AsQo91zlKUeBA')
         bot.send_message(chatid, question_9, reply_markup=keyboard_9)
     elif message.text == 'простите, ничего не вижу,тут чья-то рука':
         bot.send_message(chatid, 'панимаю')
+        bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6IxgM52XoSYnUvF9AAE4Tq-wzKQymVQAAopeAALpVQUY0AsQo91zlKUeBA')
         bot.send_message(chatid, question_9, reply_markup=keyboard_9)
 
     elif message.text == '1 год':
         bot.send_message(chatid, 'больше')
-        bot.send_message(chatid, question_10, reply_markup=keyboard_10)
+        bot.send_message(chatid, 'CAACAgIAAxkBAAEB6JBgM54L3XHeP2HMk6AIHcJY_zlJbwACTAIAAsoDBgsSVmODbCJUUh4E')
+        bot.send_message(chatid, question_11, reply_markup=keyboard_11)
     elif message.text == '2 года':
         bot.send_message(chatid, 'больше')
-        bot.send_message(chatid, question_10, reply_markup=keyboard_10)
+        bot.send_message(chatid, 'CAACAgIAAxkBAAEB6JBgM54L3XHeP2HMk6AIHcJY_zlJbwACTAIAAsoDBgsSVmODbCJUUh4E')
+        bot.send_message(chatid, question_11, reply_markup=keyboard_11)
     elif message.text == '3 года':
         bot.send_message(chatid, 'красавчик')
-        bot.send_message(chatid, question_10, reply_markup=keyboard_10)
+        bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6I5gM53GlFAwsMhaWlVhSd9IPzMOYQACSwEAAjDUnREBhYZ3NsTI6R4E')
+        bot.send_message(chatid, question_11, reply_markup=keyboard_11)
 
     elif message.text == 'Доктор Кто':
         bot.send_message(chatid, 'вроде бы верно))))')
@@ -195,13 +202,13 @@ def send_text(message):
         bot.send_message(chatid, 'хехе, такого нет, хехе')
         bot.send_message(chatid, question_11, reply_markup=keyboard_11)
 
-    elif message.text == 'Я':
-        bot.send_message(chatid, 'Всё так и есть))')
+    elif message.text == 'Я 🌼':
+        bot.send_message(chatid, 'Всё так и есть))', reply_markup=types.ReplyKeyboardRemove())
         bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6H1gM5GCtm1lqtSeeohMkSjJyh5OpgACKQIAAlrjiheVZYpBjeH4vx4E')
-        bot.send_message(chatid, question_6, reply_markup=keyboard_12)
-
+        bot.send_message(chatid, answer, reply_markup=types.ReplyKeyboardRemove())
+        bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6IpgM5qrv2ZZVVuuGMhGl-udqOqZZgACiwIAAladvQr3tGImDY878x4E')
     else:
-        bot.send_message(message.chat.id, "да-да, взломал, поломал, тыкни на предложенные варианты :)")
+        bot.send_message(message.chat.id, "мы умеем отвечать только на предложенные варианты :)")
 
 
 bot.polling(none_stop=True)
