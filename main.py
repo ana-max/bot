@@ -125,10 +125,10 @@ def send_text(message):
         bot.send_message(chatid, question_6, reply_markup=keyboard_6)
 
     elif message.text == 'Редаль Актанов':
-        bot.send_photo(chatid, open('images/cover_desktop_zip.png', 'rb'))
+        bot.send_photo(chatid, open('images/cover_desktop_zip-min.png', 'rb'))
         bot.send_message(chatid, question_7, reply_markup=keyboard_7)
     elif message.text == 'Актан Редалев':
-        bot.send_photo(chatid, open('images/cover_desktop_zip.png', 'rb'))
+        bot.send_photo(chatid, open('images/cover_desktop_zip-min.png', 'rb'))
         bot.send_message(chatid, question_7, reply_markup=keyboard_7)
 
     elif message.text == '100':
