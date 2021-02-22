@@ -182,11 +182,11 @@ def send_text(message):
 
         elif message.text == '1 год':
             bot.send_message(chatid, 'больше')
-            bot.send_message(chatid, 'CAACAgIAAxkBAAEB6JBgM54L3XHeP2HMk6AIHcJY_zlJbwACTAIAAsoDBgsSVmODbCJUUh4E')
+            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6JBgM54L3XHeP2HMk6AIHcJY_zlJbwACTAIAAsoDBgsSVmODbCJUUh4E')
             bot.send_message(chatid, question_11, reply_markup=keyboard_11)
         elif message.text == '2 года':
             bot.send_message(chatid, 'больше')
-            bot.send_message(chatid, 'CAACAgIAAxkBAAEB6JBgM54L3XHeP2HMk6AIHcJY_zlJbwACTAIAAsoDBgsSVmODbCJUUh4E')
+            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6JBgM54L3XHeP2HMk6AIHcJY_zlJbwACTAIAAsoDBgsSVmODbCJUUh4E')
             bot.send_message(chatid, question_11, reply_markup=keyboard_11)
         elif message.text == '3 года':
             bot.send_message(chatid, 'красавчик')
