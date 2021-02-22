@@ -16,7 +16,7 @@ question_9 = 'Сколько лет Михаил Юдин является на�
 question_10 = 'Любимый сериал Паши Солдатова?'
 question_11 = 'Кто самая сладкая булочка на матмехе?'
 
-answer = 'Поздравляю, ты выиграл приз! Приходи в пятницу на пары и получай приз!'
+answer = 'Поздравляю, ты выиграл! Приходи в пятницу на пары и получай приз!'
 
 
 hi_keyboard = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
@@ -133,25 +133,25 @@ def send_text(message):
 
         elif message.text == 'Меньше 10':
             bot.send_message(chatid, 'Нам, на самом деле, лень считать)))')
-            bot.send_photo(chatid, open('images/CeQr_PCiVHQ.png', 'rb'))
+            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6OZgM819kLBPDju1fEYHuxhkB9pLhAACAQAD-NLRGlPArUZNItKoHgQ')
             bot.send_message(chatid, question_4, reply_markup=keyboard_4)
         elif message.text == 'От 10 до 20':
             bot.send_message(chatid, 'Нам, на самом деле, лень считать)))')
-            bot.send_photo(chatid, open('images/CeQr_PCiVHQ.png', 'rb'))
+            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6OZgM819kLBPDju1fEYHuxhkB9pLhAACAQAD-NLRGlPArUZNItKoHgQ')
             bot.send_message(chatid, question_4, reply_markup=keyboard_4)
         elif message.text == 'Больше 20':
             bot.send_message(chatid, 'Нам, на самом деле, лень считать)))')
-            bot.send_photo(chatid, open('images/CeQr_PCiVHQ.png', 'rb'))
+            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6OZgM819kLBPDju1fEYHuxhkB9pLhAACAQAD-NLRGlPArUZNItKoHgQ')
             bot.send_message(chatid, question_4, reply_markup=keyboard_4)
 
         elif message.text == 'Петрова':
             bot.send_message(chatid, question_5, reply_markup=keyboard_5)
 
         elif message.text == 'Редаль Актанов':
-            bot.send_photo(chatid, open('images/cover_desktop_zip-min.png', 'rb'))
+            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6ORgM815ZwvHlMiDE_yD31YK0SeBPgACAgAD-NLRGg8fyQABBJUvTx4E')
             bot.send_message(chatid, question_6, reply_markup=keyboard_6)
         elif message.text == 'Актан Редалев':
-            bot.send_photo(chatid, open('images/cover_desktop_zip-min.png', 'rb'))
+            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6ORgM815ZwvHlMiDE_yD31YK0SeBPgACAgAD-NLRGg8fyQABBJUvTx4E')
             bot.send_message(chatid, question_6, reply_markup=keyboard_6)
 
         elif message.text == '100':
@@ -165,10 +165,10 @@ def send_text(message):
             bot.send_message(chatid, question_7, reply_markup=keyboard_7)
 
         elif message.text == 'Игорь Чернышев':
-            bot.send_photo(chatid, open('images/cover_desktop_zip-min.png', 'rb'))
+            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6ORgM815ZwvHlMiDE_yD31YK0SeBPgACAgAD-NLRGg8fyQABBJUvTx4E')
             bot.send_message(chatid, question_8, reply_markup=keyboard_8)
         elif message.text == 'Черныш Игорев':
-            bot.send_photo(chatid, open('images/cover_desktop_zip-min.png', 'rb'))
+            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6ORgM815ZwvHlMiDE_yD31YK0SeBPgACAgAD-NLRGg8fyQABBJUvTx4E')
             bot.send_message(chatid, question_8, reply_markup=keyboard_8)
 
         elif message.text == 'простите, у меня очень большая рука, не могу набирать':
