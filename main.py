@@ -173,10 +173,10 @@ def send_text(message):
 
         elif message.text == 'Игорь Чернышев':
             bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6ORgM815ZwvHlMiDE_yD31YK0SeBPgACAgAD-NLRGg8fyQABBJUvTx4E')
-            bot.send_message(chatid, question_8, reply_markup=keyboard_8)
+            bot.send_message(chatid, question_9, reply_markup=keyboard_9)
         elif message.text == 'Черныш Игорев':
             bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6ORgM815ZwvHlMiDE_yD31YK0SeBPgACAgAD-NLRGg8fyQABBJUvTx4E')
-            bot.send_message(chatid, question_8, reply_markup=keyboard_8)
+            bot.send_message(chatid, question_9, reply_markup=keyboard_9)
 
         elif message.text == 'простите, у меня очень большая рука, не могу набирать':
             bot.send_message(chatid, 'панимаю')
