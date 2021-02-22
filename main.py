@@ -235,4 +235,4 @@ def send_text(message):
         pass
 
 
-bot.polling(none_stop=True)
+bot.polling(none_stop=False)
