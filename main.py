@@ -50,7 +50,7 @@ keyboard_3.add(button_1, button_2, button_3)
 keyboard_4 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
 button_1 = types.KeyboardButton(text="Я")
 button_2 = types.KeyboardButton(text="Me")
-keyboard_4.add(button_1, button_2, button_3)
+keyboard_4.add(button_1, button_2)
 
 keyboard_5 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
 button_1 = types.KeyboardButton(text="Редаль Актанов")
@@ -62,6 +62,7 @@ button_1 = types.KeyboardButton(text="100")
 button_2 = types.KeyboardButton(text="300")
 button_3 = types.KeyboardButton(text="ты че пес")
 keyboard_6.add(button_1, button_2, button_3)
+
 
 @bot.message_handler(content_types=['text'])
 def send_text(message):
