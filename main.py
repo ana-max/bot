@@ -20,7 +20,7 @@ question_12 = 'Кто самая сладкая булочка на матмех
 answer = 'Поздравляю, ты выиграл! Приходи в пятницу на пары и получай приз!'
 
 
-hi_keyboard = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
+hi_keyboard = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True, one_time_keyboard=True)
 button_1 = types.KeyboardButton(text="ДА ✅")
 button_2 = types.KeyboardButton(text="! НЕТ 🔔")
 hi_keyboard.add(button_1, button_2)
@@ -37,70 +37,70 @@ def send_welcome(message):
                     reply_markup=hi_keyboard)
 
 
-keyboard_1 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
+keyboard_1 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True, one_time_keyboard=True)
 button_1 = types.KeyboardButton(text="Математический анализ 📕")
 button_2 = types.KeyboardButton(text="Апелляционные системы 📗")
 button_3 = types.KeyboardButton(text="Алгебра и геометрия 📘")
 keyboard_1.add(button_1, button_2, button_3)
 
-keyboard_2 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
+keyboard_2 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True, one_time_keyboard=True)
 button_1 = types.KeyboardButton(text="Александр Гейн")
 button_2 = types.KeyboardButton(text="Магаз Асанов")
 button_3 = types.KeyboardButton(text="Денис Березин")
 keyboard_2.add(button_1, button_2, button_3)
 
-keyboard_3 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
+keyboard_3 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True, one_time_keyboard=True)
 button_1 = types.KeyboardButton(text="Меньше 10")
 button_2 = types.KeyboardButton(text="От 10 до 20")
 button_3 = types.KeyboardButton(text="Больше 20")
 keyboard_3.add(button_1, button_2, button_3)
 
-keyboard_4 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
+keyboard_4 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True, one_time_keyboard=True)
 button_1 = types.KeyboardButton(text="Петрова")
 button_2 = types.KeyboardButton(text="Петрова")
 keyboard_4.add(button_1, button_2)
 
-keyboard_5 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
+keyboard_5 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True, one_time_keyboard=True)
 button_1 = types.KeyboardButton(text="Редаль Актанов")
 button_2 = types.KeyboardButton(text="Актан Редалев")
 keyboard_5.add(button_1, button_2)
 
-keyboard_6 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
+keyboard_6 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True, one_time_keyboard=True)
 button_1 = types.KeyboardButton(text="100")
 button_2 = types.KeyboardButton(text="300")
 button_3 = types.KeyboardButton(text="ты че пес")
 keyboard_6.add(button_1, button_2, button_3)
 
-keyboard_7 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
+keyboard_7 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True, one_time_keyboard=True)
 button_1 = types.KeyboardButton(text="Игорь Чернышев")
 button_2 = types.KeyboardButton(text="Черныш Игорев")
 keyboard_7.add(button_1, button_2)
 
-keyboard_8 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
+keyboard_8 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True, one_time_keyboard=True)
 button_1 = types.KeyboardButton(text="простите, у меня очень большая рука, не могу набирать")
 button_2 = types.KeyboardButton(text="простите, ничего не вижу,тут чья-то рука")
 keyboard_8.add(button_1, button_2)
 
-keyboard_9 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
+keyboard_9 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True, one_time_keyboard=True)
 button_1 = types.KeyboardButton(text="1 год")
 button_2 = types.KeyboardButton(text="2 года")
 button_3 = types.KeyboardButton(text="3 года")
 keyboard_9.add(button_1, button_2, button_3)
 
-keyboard_10 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
+keyboard_10 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True, one_time_keyboard=True)
 button_1 = types.KeyboardButton(text="Доктор Кто")
 button_2 = types.KeyboardButton(text="Доктор Хаус")
 button_3 = types.KeyboardButton(text="Доктор Как")
 keyboard_10.add(button_1, button_2, button_3)
 
-keyboard_11 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
+keyboard_11 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True, one_time_keyboard=True)
 button_1 = types.KeyboardButton(text="Шукстов")
 button_2 = types.KeyboardButton(text="Мирон")
 button_3 = types.KeyboardButton(text="Дэнчик")
 button_4 = types.KeyboardButton(text="Костя")
 keyboard_11.add(button_1, button_2, button_3, button_4)
 
-keyboard_12 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
+keyboard_12 = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True, one_time_keyboard=True)
 button_1 = types.KeyboardButton(text="Я 🌼")
 keyboard_12.add(button_1)
 
