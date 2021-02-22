@@ -140,25 +140,25 @@ def send_text(message):
 
         elif message.text == 'Меньше 10':
             bot.send_message(chatid, 'Нам, на самом деле, лень считать)))')
-            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6OZgM819kLBPDju1fEYHuxhkB9pLhAACAQAD-NLRGlPArUZNItKoHgQ')
+            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6P5gM9hJdtpWp2lA3a2ZxQHqjApyMQACBAAD-NLRGolX-SGtdMrdHgQ')
             bot.send_message(chatid, question_4, reply_markup=keyboard_4)
         elif message.text == 'От 10 до 20':
             bot.send_message(chatid, 'Нам, на самом деле, лень считать)))')
-            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6OZgM819kLBPDju1fEYHuxhkB9pLhAACAQAD-NLRGlPArUZNItKoHgQ')
+            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6P5gM9hJdtpWp2lA3a2ZxQHqjApyMQACBAAD-NLRGolX-SGtdMrdHgQ')
             bot.send_message(chatid, question_4, reply_markup=keyboard_4)
         elif message.text == 'Больше 20':
             bot.send_message(chatid, 'Нам, на самом деле, лень считать)))')
-            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6OZgM819kLBPDju1fEYHuxhkB9pLhAACAQAD-NLRGlPArUZNItKoHgQ')
+            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6P5gM9hJdtpWp2lA3a2ZxQHqjApyMQACBAAD-NLRGolX-SGtdMrdHgQ')
             bot.send_message(chatid, question_4, reply_markup=keyboard_4)
 
         elif message.text == 'Петрова':
             bot.send_message(chatid, question_5, reply_markup=keyboard_5)
 
         elif message.text == 'Редаль Актанов':
-            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6ORgM815ZwvHlMiDE_yD31YK0SeBPgACAgAD-NLRGg8fyQABBJUvTx4E')
+            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6QJgM9hTVZOz0RfaHd7wHA19blAnUQACBQAD-NLRGm0W9B8I3j3jHgQ')
             bot.send_message(chatid, question_6, reply_markup=keyboard_6)
         elif message.text == 'Актан Редалев':
-            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6ORgM815ZwvHlMiDE_yD31YK0SeBPgACAgAD-NLRGg8fyQABBJUvTx4E')
+            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6QJgM9hTVZOz0RfaHd7wHA19blAnUQACBQAD-NLRGm0W9B8I3j3jHgQ')
             bot.send_message(chatid, question_6, reply_markup=keyboard_6)
 
         elif message.text == '100':
@@ -172,10 +172,10 @@ def send_text(message):
             bot.send_message(chatid, question_7, reply_markup=keyboard_7)
 
         elif message.text == 'Игорь Чернышев':
-            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6ORgM815ZwvHlMiDE_yD31YK0SeBPgACAgAD-NLRGg8fyQABBJUvTx4E')
+            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6QRgM9hXIotq8hgrBwnMCXZjPUXbBQACBgAD-NLRGghz_HSoupkNHgQ')
             bot.send_message(chatid, question_9, reply_markup=keyboard_9)
         elif message.text == 'Черныш Игорев':
-            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6ORgM815ZwvHlMiDE_yD31YK0SeBPgACAgAD-NLRGg8fyQABBJUvTx4E')
+            bot.send_sticker(chatid, 'CAACAgIAAxkBAAEB6QRgM9hXIotq8hgrBwnMCXZjPUXbBQACBgAD-NLRGghz_HSoupkNHgQ')
             bot.send_message(chatid, question_9, reply_markup=keyboard_9)
 
         elif message.text == 'простите, у меня очень большая рука, не могу набирать':
